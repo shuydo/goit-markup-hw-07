@@ -442,7 +442,7 @@ address {
   transition: fill var(--t-cubic);
 }
 
-clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
