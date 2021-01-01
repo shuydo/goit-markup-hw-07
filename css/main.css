@@ -79,6 +79,19 @@ address {
   text-decoration: none;
 }
 
+.invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -88,7 +101,7 @@ address {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: calc(31/26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
@@ -97,7 +110,7 @@ address {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: calc(31/26);
   letter-spacing: 0.03em;
   color: #000000;
 }
@@ -115,7 +128,6 @@ address {
   display: flex;
   align-items: center;
   padding: 25px 0 24px;
-  /* outline: 1px solid tomato; */
 }
 
 .site-nav {
@@ -124,7 +136,6 @@ address {
   margin-left: 93px;
   min-width: 294px;
   justify-content: space-between;
-  /* outline: 1px solid teal; */
 }
 
 .site-nav .link {
@@ -136,13 +147,10 @@ address {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   transition: color var(--t-cubic);
-  /* outline: 1px solid red; */
 }
 
-/* .site-nav .link.is-current { */
 .link.is-current {
   color: var(--accent-color);
-  /* outline: 1px solid teal; */
 }
 
 .link.is-current::after {
@@ -255,19 +263,6 @@ address {
   margin-right: 30px;
 }
 
-.invisible {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .vertu-header {
   margin-top: 30px;
   font-weight: bold;
@@ -296,7 +291,6 @@ address {
 .icon-place {
   /* display: block; */
   background-color: #f5f4fa;
-  /* outline: 1px solid black; */
 }
 
 .direction-title,
