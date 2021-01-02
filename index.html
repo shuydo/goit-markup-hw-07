@@ -21,7 +21,7 @@
       <nav class="navigation">
 
         <a class="link" lang="en" href="index.html" aria-label="Логотип">
-          <span class="logo1st">Web</span><span class="logo2nd">Studio</span>
+          <span class="logo part1">Web</span><span class="logo part2">Studio</span>
         </a>
 
         <ul class="site-nav list">
@@ -346,7 +346,7 @@
     <div class="container">
       <div>
         <div>
-          <span class="logo1st">Web</span><span class="logo2nd">Studio</span>
+          <span class="logo part1">Web</span><span class="logo part2">Studio</span>
         </div>
 
         <address>
@@ -494,10 +494,11 @@
     </div>
   </div>
   <script src="js/modal.js"></script>
+  <!-- Скрипт (внизу) выводит в консоль результат ввода в форму class="form" (здесь '.form')  -->
   <script>
     (() => {
       document
-        .querySelector('.js-speaker-form')
+        .querySelector('.form')
         .addEventListener('submit', e => {
           e.preventDefault()
           new FormData(e.currentTarget).forEach((value, name) =>

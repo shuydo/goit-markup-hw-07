@@ -2,22 +2,6 @@
   display: flex;
   align-items: center;
 }
-.logo1st {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31/26);
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-.logo2nd {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31/26);
-  letter-spacing: 0.03em;
-  color: #000000;
-}
 .header::after {
   content: "";
   width: 1600px;
@@ -66,7 +50,7 @@
   background-color: var(--accent-color);
 }
 .email {
-  display: flex;
+  display: flex;  
   align-items: center;
 
   transition: color var(--t-cubic);
@@ -79,7 +63,6 @@
 }
 .phone {
   display: flex;
-
   transition: color var(--t-cubic);
 }
 .smartphone {
@@ -104,7 +87,7 @@
 .phone {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16/14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }

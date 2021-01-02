@@ -7,7 +7,6 @@
   justify-content: space-between;
 }
 .team-header {
-  /* padding-top: 94px; */
   padding-bottom: 50px;
 }
 .team-item {
@@ -22,8 +21,7 @@
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -34,8 +32,7 @@
 
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -44,17 +41,14 @@
   display: flex;
   justify-content: space-between;
   width: 206px;
-}
 
-/* ----------------ul soc */
-.team .soc-links {
-  display: inline-flex;
-  margin: 0 0 30px 32px;
-  fill: #afb1b8;
-  border-radius: 50%;
+  .team & {
+    display: inline-flex;
+    margin: 0 0 30px 32px;
+    fill: #afb1b8;
+    border-radius: 50%;
+  }
 }
-
-/* .soc-list-link */
 .soc-list-link {
   display: flex;
   justify-content: center;
@@ -62,25 +56,24 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* background-color: #fff; */
-  /* border-color: transparent; */
-  /* transition: color var(--t-cubic); */
+
   transition: background-color var(--t-cubic);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    transition: var(--t-cubic);
+  }
 }
 .soc-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  /* transition: color var(--t-cubic); */
   transition: fill var(--t-cubic);
-}
-.soc-list-link:hover,
-.soc-list-link:focus {
-  background-color: var(--accent-color);
-  transition: var(--t-cubic);
-}
-.soc-list-link:hover .soc-icon,
-.soc-list-link:focus .soc-icon {
-  fill: #fff;
-  transition: fill var(--t-cubic);
+
+  .soc-list-link:hover &,
+  .soc-list-link:focus & {
+    fill: #fff;
+    transition: fill var(--t-cubic);
+  }
 }

@@ -9,7 +9,6 @@
 
 body {
   font-family: Roboto;
-  font-style: normal;
   /*не ясно, почему нет у элемента 1st, в TDs*/
 }
 
@@ -17,12 +16,7 @@ img {
   display: block;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
@@ -30,8 +24,7 @@ p {
   margin: 0;
 }
 
-ul,
-ol {
+ul, ol {
   margin: 0;
   padding: 0;
 }
@@ -46,13 +39,40 @@ address {
   margin: 0 auto;
 }
 
+.direction-title,
+.team-header,
+.clients-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: calc(31/26);
+  letter-spacing: 0.03em;
+}
+
+.part1 {
+  color: var(--accent-color);
+}
+
+.part2 {
+  color: #000000;
+}
+
 .button {
-  padding: 10px 32px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
   display: flex;
   align-items: center;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
@@ -63,8 +83,7 @@ address {
   transition: all var(--t-cubic);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: #fff;
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -95,24 +114,6 @@ address {
 .navigation {
   display: flex;
   align-items: center;
-}
-
-.logo1st {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31/26);
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-
-.logo2nd {
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(31/26);
-  letter-spacing: 0.03em;
-  color: #000000;
 }
 
 .header::after {
@@ -209,7 +210,7 @@ address {
 .phone {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16/14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
@@ -243,8 +244,6 @@ address {
 
 .hero .button {
   margin-top: 30px;
-  /* padding: 6px 22px; */
-  font-weight: 700;
 }
 
 .vertu {
@@ -253,14 +252,6 @@ address {
 
 .vertu-list {
   display: flex;
-}
-
-.vertu-item {
-  width: 270px;
-}
-
-.vertu-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .vertu-header {
@@ -282,6 +273,14 @@ address {
   color: var(--primary-text-color);
 }
 
+.vertu-item {
+  width: 270px;
+}
+
+.vertu-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .vertu .icon {
   margin: 25px 100px;
   width: 70px;
@@ -291,17 +290,6 @@ address {
 .icon-place {
   /* display: block; */
   background-color: #f5f4fa;
-}
-
-.direction-title,
-.team-header,
-.clients-header {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
 }
 
 .direction {
@@ -314,13 +302,8 @@ address {
   justify-content: space-between;
 }
 
-.direction img {
-  display: block;
-}
-
 .thumb {
   position: relative;
-  /* display: block; */
   height: 294px;
   background-color: #fff;
 }
@@ -332,8 +315,6 @@ address {
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
   padding: 27px;
-  /* font-family: Roboto; */
-  /* font-style: normal; */
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -354,7 +335,6 @@ address {
 }
 
 .team-header {
-  /* padding-top: 94px; */
   padding-bottom: 50px;
 }
 
@@ -369,8 +349,7 @@ address {
   margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -381,8 +360,7 @@ address {
   margin-bottom: 16px;
   font-weight: normal;
   font-size: 16px;
-  line-height: 1.19;
-  /* identical to box height */
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -394,7 +372,6 @@ address {
   width: 206px;
 }
 
-/* ----------------ul soc */
 .team .soc-links {
   display: inline-flex;
   margin: 0 0 30px 32px;
@@ -402,7 +379,6 @@ address {
   border-radius: 50%;
 }
 
-/* .soc-list-link */
 .soc-list-link {
   display: flex;
   justify-content: center;
@@ -410,24 +386,19 @@ address {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /* background-color: #fff; */
-  /* border-color: transparent; */
-  /* transition: color var(--t-cubic); */
   transition: background-color var(--t-cubic);
+}
+
+.soc-list-link:hover, .soc-list-link:focus {
+  background-color: var(--accent-color);
+  transition: var(--t-cubic);
 }
 
 .soc-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-  /* transition: color var(--t-cubic); */
   transition: fill var(--t-cubic);
-}
-
-.soc-list-link:hover,
-.soc-list-link:focus {
-  background-color: var(--accent-color);
-  transition: var(--t-cubic);
 }
 
 .soc-list-link:hover .soc-icon,
@@ -457,12 +428,6 @@ address {
   fill: currentColor;
 }
 
-.client-link:hover,
-.client-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-}
-
 .client-link {
   display: inline-block;
   width: 170px;
@@ -473,6 +438,12 @@ address {
   padding: 20px 0;
   color: #afb1b8;
   transition: color var(--t-cubic);
+}
+
+.client-link:hover, .client-link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  outline: none;
 }
 
 .footer {
@@ -497,9 +468,10 @@ address {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  transition: color var(--t-cubic);
 }
 
-.footer .logo2nd {
+.footer .part2 {
   color: #ffffff;
 }
 
@@ -507,10 +479,6 @@ address {
 .address-item .phone {
   display: block;
   margin-top: 9px;
-}
-
-.map-address {
-  transition: color var(--t-cubic);
 }
 
 .join-box {
@@ -550,18 +518,15 @@ address {
   margin-top: 12px;
   align-items: flex-end;
   justify-content: space-between;
-  /* outline: 1px solid white; */
 }
 
 .subscribe label {
   margin-bottom: 20px;
-  /* outline: 1px solid white; */
 }
 
 .subscribe-email {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 .subscribe input {
@@ -569,7 +534,6 @@ address {
   height: 50px;
   padding-left: 16px;
   background-color: #2f303a;
-  /* outline: none; */
   border: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -579,10 +543,9 @@ address {
 }
 
 .subscribe button {
-  padding: 27px;
+  padding: 29px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* margin: 30px auto 0; */
   color: #fff;
   background-color: var(--accent-color);
 }
@@ -604,6 +567,9 @@ address {
 
 .filter-buttons .button {
   padding: 6px 22px;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
 }
 
 .filter-item:not(:last-child) {
@@ -629,23 +595,18 @@ address {
   margin-bottom: 30px;
 }
 
-/* .portfolio-link:focus, */
-/* .portfolio-item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  } */
-.portfolio-item:focus-within,
-.portfolio-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.portfolio-link:focus .portfolio-item {
+.portfolio-item:focus-within, .portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-link {
   text-decoration: none;
   outline: tomato;
+}
+
+.portfolio-link:focus .slide,
+.portfolio-link:hover .slide {
+  transform: translateY(-100%);
 }
 
 .portfolio-name {
@@ -666,11 +627,6 @@ address {
 
 .discription {
   padding: 20px 24px;
-}
-
-.portfolio-link:focus .slide,
-.portfolio-link:hover .slide {
-  transform: translateY(-100%);
 }
 
 .card-thumb {
@@ -765,7 +721,6 @@ address {
   letter-spacing: 0.03em;
   color: #212121;
   text-align: center;
-  /* outline: 1px solid black; */
 }
 
 .form .icon {
@@ -777,14 +732,21 @@ address {
   width: 15px;
   height: 15px;
   transition: fill var(--t-cubic);
-  /* background-color: tomato; */
 }
 
 .form-field {
   position: relative;
   display: block;
   margin-bottom: 20px;
-  /* outline: 1px solid red;; */
+}
+
+.form-field:focus-within > .icon {
+  fill: var(--accent-color);
+}
+
+.form-field:focus-within > .form-input {
+  outline: none;
+  border: 1px solid var(--accent-color);
 }
 
 .form-label {
@@ -793,29 +755,17 @@ address {
   line-height: CALC(14/12);
   letter-spacing: 0.01em;
   color: #757575;
-  /* position: absolute;
-    top: 50%;
-    left: 40px;
-    transform: translateY(-50%);
-  
-    transition: transform 250ms linear; */
 }
 
 .form-input {
   width: 100%;
   margin: 0;
   padding: 12px 0 12px 42px;
-  font: inherit;
   border-radius: 3px;
-  /* border-color: transparent; */
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border-color var(--t-cubic);
 }
 
-/* h1 {
-    font-size: 12px;
-    text-align: center;
-  } */
 .message {
   resize: none;
   width: 100%;
@@ -825,55 +775,17 @@ address {
   transition: border-color var(--t-cubic);
 }
 
-.form-field:focus-within > .icon {
-  /* background-color: blue; */
-  fill: var(--accent-color);
-}
-
-.form-field:focus-within > .form-input {
-  outline: none;
-  border: 1px solid var(--accent-color);
-}
-
 .message:focus-within {
   outline: none;
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-/* .form-field:focus-within > .form-label,
-  .form-input:not(:placeholder-shown) + .form-label {
-    transform: translateY(-50px);
-  } */
-/* textarea {
-    resize: none;
-  } */
 .accept {
   display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid black; */
-}
-
-.custom-check-box {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  /* margin-right: 5px; */
-  /* border: 2px solid #2a2a2a;
-    border-radius: 4px; */
-  background-image: url("../images/box.svg");
-  /* transition: transform 250ms linear; */
-}
-
-.accept-input:checked + .custom-check-box {
-  /* transform: scale(1.2); */
-  border-color: transparent;
-  background-color: var(--accent-color);
-  background-image: url("../images/mark.svg");
-  background-size: contain;
-  background-origin: border-box;
 }
 
 .accept span {
@@ -881,7 +793,6 @@ address {
   line-height: calc(24 / 14);
   color: #757575;
   vertical-align: middle;
-  /* outline: 1px solid black; */
 }
 
 .accept a {
@@ -890,9 +801,23 @@ address {
   border-bottom: 1px solid var(--accent-color);
 }
 
+.custom-check-box {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url("../images/box.svg");
+}
+
+.accept-input:checked + .custom-check-box {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url("../images/mark.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .subscribe input::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  /* color:red */
 }
 
 .form button {

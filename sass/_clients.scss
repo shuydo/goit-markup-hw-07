@@ -1,24 +1,21 @@
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.clients-header {
-  margin-bottom: 50px;
-}
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+
+  &-header{
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
 }
 .client-icon {
   max-width: 88px;
   max-height: 52px;
   fill: currentColor;
-}
-.client-link:hover,
-.client-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
 }
 .client-link {
   display: inline-block;
@@ -31,4 +28,11 @@
   color: #afb1b8;
 
   transition: color var(--t-cubic);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    outline: none;
+  }
 }
