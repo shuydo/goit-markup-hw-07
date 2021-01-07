@@ -166,27 +166,25 @@ address {
   background-color: var(--accent-color);
 }
 
-.email {
+.email, .phone {
   display: flex;
   align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16/14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
   transition: color var(--t-cubic);
 }
 
-.envelope {
+.envelope, .smartphone {
   margin-right: 10px;
+  fill: var(--primary-text-color);
+  transition: fill var(--t-cubic);
 }
 
 .header .email {
   margin-right: 50px;
-}
-
-.phone {
-  display: flex;
-  transition: color var(--t-cubic);
-}
-
-.smartphone {
-  margin-right: 10px;
 }
 
 .header address {
@@ -203,16 +201,11 @@ address {
 .map-address:hover,
 .map-address:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
-.email,
-.phone {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16/14);
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+.email:hover .envelope,
+.phone:hover .smartphone {
+  fill: var(--accent-color);
 }
 
 .hero {
